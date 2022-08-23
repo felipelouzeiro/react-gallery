@@ -1,0 +1,8 @@
+export const Environments = {
+  API_KEY: process.env.REACT_APP_APIKEY,
+  AUTH_DOMAIN: process.env.REACT_APP_AUTHDOMAIN,
+  PROJECT_ID: process.env.REACT_APP_PROJECTID,
+  STORAGE_BUCKET: process.env.REACT_APP_STORAGEBUCKET,
+  MESSAGING_SENDER_ID: process.env.REACT_APP_MESSAGINGSENDERID,
+  APP_ID: process.env.REACT_APP_APPID,
+};
