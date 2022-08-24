@@ -27,7 +27,6 @@ export const App = () => {
     const formData = new FormData(e.currentTarget);
     const file = formData.get('image') as File;
 
-    console.log('AQ', file);
     if (file && file.size > 0) {
       setUploading(true);
 
