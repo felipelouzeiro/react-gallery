@@ -1,46 +1,44 @@
-# Getting Started with Create React App
+# Gallery
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esse projeto trata-se de uma galeria de imagens, com um formulário de cadastro básico. Ela foi criada para ser uma ferramenta para armazenagem de imagens, possibilitando o uso delas mais facilmente em aplicações e outras atividades. Também serve se você quiser **só** guardar imagens.
 
-## Available Scripts
+### Construção
 
-In the project directory, you can run:
+#### _Ferramentas_
 
-### `npm start`
+- React com Typescript;
+- Styled Components;
+- Firebase
+- Uuid4
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### _Sobre_
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+A aplicação faz upload de fotos para um banco de dados firebase, utilizei uma conta gratuita(Spark). Escolhi esse método por causa da simplicidade na configuração e porque era algo que eu já queria testar.
 
-### `npm test`
+A integração com o banco de dados foi construída em um services separado da aplicação frontend, isso permite maior flexibilidade e segurança em casos de troca do banco de dados.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Para testar a aplicação
 
-### `npm run build`
+1. Clone a aplicação.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Entre no diretório dp projeto e instale as dependências com o comando `npm install`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Crie um arquivo **.env.local** na raiz do projeto e preencha conforme o exemplo do arquivo **.env.example**.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Execute o script start para iniciar a aplicação: `npm start`.
 
-### `npm run eject`
+### Screenshots do funcionamento
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### _Galeria vazia_
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![galeria vazia](https://raw.githubusercontent.com/felipelouzeiro/react-gallery/master/src/shared/images/tela-vazia.png?raw=true)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### _Buscando imagens_
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![carregando imagens](https://raw.githubusercontent.com/felipelouzeiro/react-gallery/master/src/shared/images/buscando-fotos.gif?raw=true)
 
-## Learn More
+#### _Adicionando Imagens_
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![adicionando imagens](https://raw.githubusercontent.com/felipelouzeiro/react-gallery/master/src/shared/images/adicionando.gif?raw=true)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Feito com :heart:.
