@@ -47,7 +47,7 @@ export const App = () => {
   return (
     <C.Container>
       <C.Area>
-        <C.Header>Upload Gallery</C.Header>
+        <C.Header>Galeria</C.Header>
         <C.UploadForm method="POST" onSubmit={handleFormSubmit}>
           <input type={'file'} name="image" />
           <input type={'submit'} value="Enviar" />
